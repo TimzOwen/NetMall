@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "932483473632",
+    "firebase_url": "https://netmall-c0505.firebaseio.com",
+    "project_id": "netmall-c0505",
+    "storage_bucket": "netmall-c0505.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932483473632:android:ca420aad20090b046e7085",
+        "android_client_info": {
+          "package_name": "com.example.netmall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932483473632-mnss79uqev2e5j4dnsoriee2ujb1nkjq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.netmall",
+            "certificate_hash": "beaf0dfa9bc65bc452a265e66b3fb0b185515a1f"
+          }
+        },
+        {
+          "client_id": "932483473632-g6lt3mdu3b0droq5bqdlfna45ebmbrv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2Z_yLOvFwmFOKY8eURkNEQChnJ85q9pQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932483473632-g6lt3mdu3b0droq5bqdlfna45ebmbrv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
