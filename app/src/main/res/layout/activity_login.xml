@@ -55,8 +55,74 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/et_input_password_number"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="6dp">
 
-        />
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/checkbox_rem_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:text="Remeber Me?"
+            android:textColor="@android:color/white"
+            app:cbd_strokeColor="@android:color/white"
+            android:layout_marginStart="17sp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="17sp" />
+        <TextView
+            android:id="@+id/tv_forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Forgot Password"
+            android:layout_marginLeft="80dp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_loginpg_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:padding="17dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        android:textAllCaps="false"
+        android:text="Login"/>
+    <TextView
+        android:id="@+id/tv_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="I am Admin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/btn_loginpg_join"
+        android:layout_marginEnd="23dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp" />
+    <TextView
+        android:id="@+id/tv_not_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="I am not Admin"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/btn_loginpg_join"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="25dp"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"/>
 
 </RelativeLayout>
