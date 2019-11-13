@@ -1,9 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    android:background="sign"
+    tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/login_appLogo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/applogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        />
+    <EditText
+        android:id="@+id/et_input_email_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_appLogo"
+        android:background="@drawable/inputs_design"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Enter you Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        />
+    <EditText
+        android:id="@+id/et_input_password_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_input_email_number"
+        android:background="@drawable/inputs_design"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Password"
+        android:layout_marginTop="6dp"
+        android:inputType="number"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        />
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/et_input_password_number"
+        android:layout_marginTop="6dp">
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/checkbox_rem_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:text="Remeber Me?"
+            android:textColor="@android:color/white"
+            app:cbd_strokeColor="@android:color/white"
+            android:layout_marginStart="17sp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="17sp" />
+        <TextView
+            android:id="@+id/tv_forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Forgot Password"
+            android:layout_marginLeft="80dp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:padding="17dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        android:textAllCaps="false"
+        android:text="Sign Up"/>
+    <TextView
+        android:id="@+id/tv_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="I am Admin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/btn_join"
+        android:layout_marginEnd="23dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp" />
+    <TextView
+        android:id="@+id/tv_not_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="I am not Admin"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/btn_join"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="25dp"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
