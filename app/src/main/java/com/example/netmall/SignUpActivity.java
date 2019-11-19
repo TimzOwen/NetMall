@@ -36,7 +36,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     public void fetchIds()
     {
-        btnSignUp = findViewById(R.id.btn_join);
+        //btnSignUp = findViewById(R.id.btn_join);
         etEmail = findViewById(R.id.et_input_email_number);
         etPassword = findViewById(R.id.et_input_password_number);
 
